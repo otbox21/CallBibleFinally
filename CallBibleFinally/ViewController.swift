@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         ExpandableNames(isExpanded: true, names: ["Tara", "Alex", "Frank", "Katie", "Scott"]),
         ExpandableNames(isExpanded: true, names: ["Benjamin", "Sarah"])
     ]
-    
+    var sectionNames = ["Office", "Field", "Other"]
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -61,7 +61,8 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let button = UIButton(type: .system)
-        button.setTitle("Close", for: .normal)
+        
+        button.setTitle(sectionNames[section], for: .normal)
         button.setTitleColor(.black, for: .normal)
         button.backgroundColor = .yellow
         button.addTarget(self, action: #selector(handleExpandClose), for: .touchUpInside)
@@ -69,7 +70,6 @@ extension ViewController: UITableViewDataSource {
         return button
     }
     
-
     
     //MARK: - Expanding and Closing Sections
     @objc func handleExpandClose(button: UIButton) {
