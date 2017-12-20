@@ -10,13 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    var cellTracker = Set<IndexPath>()
+    var twoDimensionalArray = [
+        ExpandableNames(isExpanded: true, names: ["Brian", "Lisa", "Zack"]),
+        ExpandableNames(isExpanded: true, names: ["Tara", "Alex", "Frank", "Katie", "Scott"]),
+        ExpandableNames(isExpanded: true, names: ["Benjamin", "Sarah"])
+    ]
+    
+    
+    
     @IBOutlet weak var tableView: UITableView!
     @IBAction func EmailButtonClicked(_ sender: Any) {
         print("Email button clicked")
     }
     
     
-    var cellTracker = Set<IndexPath>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,22 +36,94 @@ class ViewController: UIViewController {
 
 }
 
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+//MARK: - TableView DataSource Methods
+
+
 extension ViewController: UITableViewDataSource {
     
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+
+    //MARK: - Section Header Numbers and Look
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return twoDimensionalArray.count
     }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 30
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let button = UIButton(type: .system)
+        button.setTitle("Close", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        button.backgroundColor = .yellow
+        button.addTarget(self, action: #selector(handleExpandClose), for: .touchUpInside)
+        button.tag = section
+        return button
+    }
+    
+
+    
+    //MARK: - Expanding and Closing Sections
+    @objc func handleExpandClose(button: UIButton) {
+        print("trying to expand and close section")
+        print(button.tag)
+        let section = button.tag
+        //we'll try to close the section first by deleting the rows
+        var indexPaths = [IndexPath]()
+        for row in twoDimensionalArray[section].names.indices {
+            print(0, row)
+            let indexPath = IndexPath(row: row, section: section)
+            indexPaths.append(indexPath)
+        }
+        let isExpanded = twoDimensionalArray[section].isExpanded
+        twoDimensionalArray[section].isExpanded = !isExpanded
+        if isExpanded{
+            tableView.deleteRows(at: indexPaths, with: .fade)
+        } else {
+            tableView.insertRows(at: indexPaths, with: .fade)
+        }
+        
+    }
+    
+    
+    //MARK: - Rows Number and Behavior
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if !twoDimensionalArray[section].isExpanded {
+            return 0
+        }
+        return twoDimensionalArray[section].names.count
+    }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! StackCell
         
         cell.toggle(cellTracker.contains(indexPath))
         
+        let name = twoDimensionalArray[indexPath.section].names[indexPath.row]
+        
+        cell.textLabel?.text = "\(name) Section:\(indexPath.section) Row:\(indexPath.row)"
+        
         return cell
     }
     
 }
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+//MARK: - TableView Delegate Methods
 
 extension ViewController: UITableViewDelegate {
     
