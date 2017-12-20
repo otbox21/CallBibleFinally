@@ -60,15 +60,19 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let button = UIButton(type: .system)
         
+        let button = UIButton(type: .system)
+        //TODO: - Left-justify the title of the button
         button.setTitle(sectionNames[section], for: .normal)
         button.setTitleColor(.black, for: .normal)
-        button.backgroundColor = .yellow
+        //TODO: - Change background color
+        button.backgroundColor = .lightGray
         button.addTarget(self, action: #selector(handleExpandClose), for: .touchUpInside)
         button.tag = section
         return button
     }
+    
+    
     
     
     //MARK: - Expanding and Closing Sections
@@ -109,9 +113,9 @@ extension ViewController: UITableViewDataSource {
         
         cell.toggle(cellTracker.contains(indexPath))
         
-        let name = twoDimensionalArray[indexPath.section].names[indexPath.row]
+//        let name = twoDimensionalArray[indexPath.section].names[indexPath.row]
+//        cell.textLabel?.text = "\(name) Section:\(indexPath.section) Row:\(indexPath.row)"
         
-        cell.textLabel?.text = "\(name) Section:\(indexPath.section) Row:\(indexPath.row)"
         
         return cell
     }
@@ -138,8 +142,10 @@ extension ViewController: UITableViewDelegate {
                 cellTracker.insert(indexPath)
             }
             
-            tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+            cell.toggle(cellTracker.contains(indexPath))
             
+            tableView.beginUpdates()
+            tableView.endUpdates()
         }
 }
 
