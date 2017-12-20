@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sceneCellTableViewCell" rowHeight="90" id="KGk-i7-Jjw" customClass="SceneCellTableViewCell" customModule="CallBibleFinally" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTI-Md-k2j">
+                        <rect key="frame" x="16" y="34" width="68" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="68" id="MMr-fL-cfF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapIcon" translatesAutoresizingMaskIntoConstraints="NO" id="OBf-Uy-sb0">
+                        <rect key="frame" x="247" y="-68.5" width="57" height="225"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="57" id="1lN-xE-2Gk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scene Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pC-wW-mif">
+                        <rect key="frame" x="98" y="39" width="118" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scene Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="us0-J5-5Lb">
+                        <rect key="frame" x="98" y="58" width="98" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SHOOT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQM-yT-JD4">
+                        <rect key="frame" x="95" y="10" width="125" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.78388129340277779" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="XQM-yT-JD4" firstAttribute="centerY" secondItem="OBf-Uy-sb0" secondAttribute="centerY" id="QYY-3Q-0Wx"/>
+                    <constraint firstAttribute="trailing" secondItem="OBf-Uy-sb0" secondAttribute="trailing" constant="16" id="RFp-08-meX"/>
+                    <constraint firstItem="7pC-wW-mif" firstAttribute="leading" secondItem="PTI-Md-k2j" secondAttribute="trailing" constant="14" id="TVE-gU-R6L"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="7pC-wW-mif" secondAttribute="bottom" constant="19" id="Ubr-Cy-XV0"/>
+                    <constraint firstItem="PTI-Md-k2j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="XqS-Ky-VQq"/>
+                    <constraint firstItem="PTI-Md-k2j" firstAttribute="centerY" secondItem="OBf-Uy-sb0" secondAttribute="centerY" id="l5C-jS-9rd"/>
+                    <constraint firstItem="OBf-Uy-sb0" firstAttribute="leading" secondItem="XQM-yT-JD4" secondAttribute="trailing" constant="20" id="mbe-Y7-7U9"/>
+                    <constraint firstItem="PTI-Md-k2j" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pcj-j6-RxZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="100" y="65"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mapIcon" width="225" height="225"/>
+    </resources>
+</document>

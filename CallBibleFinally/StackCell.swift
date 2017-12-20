@@ -11,6 +11,8 @@ import UIKit
 class StackCell: UITableViewCell {
     
     @IBOutlet var collection: [UIView]!
+    
+    
 
     func toggle(_ hide: Bool) {
         

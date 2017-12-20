@@ -10,8 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+//TODO - have all contact cells collapsed when app starts
     
     var cellTracker = Set<IndexPath>()
+
+    
     var twoDimensionalArray = [
         ExpandableNames(isExpanded: true, names: ["Brian", "Lisa", "Zack"]),
         ExpandableNames(isExpanded: true, names: ["Tara", "Alex", "Frank", "Katie", "Scott"]),
@@ -31,7 +34,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
             tableView.estimatedRowHeight = 80
             tableView.rowHeight = UITableViewAutomaticDimension
+        
+        
         }
+    
+    override func viewDidAppear(_ animated: Bool) {
+ 
+    }
     
 
 }
@@ -50,6 +59,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource {
     
 
+    
     //MARK: - Section Header Numbers and Look
     func numberOfSections(in tableView: UITableView) -> Int {
         return twoDimensionalArray.count
