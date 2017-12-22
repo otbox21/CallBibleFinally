@@ -1,0 +1,6 @@
+framework module Pods_CallBibleFinally {
+  umbrella header "Pods-CallBibleFinally-umbrella.h"
+
+  export *
+  module * { export * }
+}

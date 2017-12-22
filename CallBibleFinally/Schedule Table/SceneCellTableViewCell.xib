@@ -35,21 +35,21 @@
                             <constraint firstAttribute="width" constant="57" id="1lN-xE-2Gk"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scene Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pC-wW-mif">
-                        <rect key="frame" x="98" y="39" width="118" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scene Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="us0-J5-5Lb">
-                        <rect key="frame" x="98" y="58" width="98" height="21"/>
+                        <rect key="frame" x="88" y="39" width="98" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SHOOT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQM-yT-JD4">
-                        <rect key="frame" x="95" y="10" width="125" height="21"/>
+                        <rect key="frame" x="88" y="11" width="125" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Scene Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pC-wW-mif">
+                        <rect key="frame" x="88" y="58" width="118" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -68,6 +68,13 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="mapImage" destination="OBf-Uy-sb0" id="nvE-24-WOn"/>
+                <outlet property="sceneLocationLabel" destination="7pC-wW-mif" id="BB8-Dj-M3k"/>
+                <outlet property="sceneNameLabel" destination="us0-J5-5Lb" id="CEh-mu-1Qg"/>
+                <outlet property="shootLabel" destination="XQM-yT-JD4" id="u3v-dJ-APt"/>
+                <outlet property="timeLabel" destination="PTI-Md-k2j" id="Jaw-Lv-b1k"/>
+            </connections>
             <point key="canvasLocation" x="100" y="65"/>
         </tableViewCell>
     </objects>

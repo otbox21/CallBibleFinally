@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043A0F0B1FEC5BD50092AB2F /* travelInforTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A0F091FEC5BD50092AB2F /* travelInforTableViewCell.swift */; };
+		043A0F0C1FEC5BD50092AB2F /* travelInforTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043A0F0A1FEC5BD50092AB2F /* travelInforTableViewCell.xib */; };
+		043A0F101FED5A840092AB2F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A0F0F1FED5A840092AB2F /* ChatViewController.swift */; };
+		043A0F121FED5C190092AB2F /* BibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A0F111FED5C190092AB2F /* BibleViewController.swift */; };
 		0477DB2F1FE9A43B003BFD7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477DB2E1FE9A43B003BFD7E /* AppDelegate.swift */; };
 		0477DB311FE9A43B003BFD7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477DB301FE9A43B003BFD7E /* ViewController.swift */; };
 		0477DB341FE9A43B003BFD7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0477DB321FE9A43B003BFD7E /* Main.storyboard */; };
@@ -17,11 +21,17 @@
 		0477DB481FEAE360003BFD7E /* ScheduleCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477DB461FEAE360003BFD7E /* ScheduleCellTableViewCell.swift */; };
 		0477DB491FEAE360003BFD7E /* ScheduleCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0477DB471FEAE360003BFD7E /* ScheduleCellTableViewCell.xib */; };
 		0477DB4B1FEAE4F7003BFD7E /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477DB4A1FEAE4F7003BFD7E /* ScheduleViewController.swift */; };
+		04950DD51FED99320054A46A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04950DD41FED99320054A46A /* Constants.swift */; };
 		04E5B1F41FEB092D00DF25D8 /* SceneCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E5B1F21FEB092D00DF25D8 /* SceneCellTableViewCell.swift */; };
 		04E5B1F51FEB092D00DF25D8 /* SceneCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E5B1F31FEB092D00DF25D8 /* SceneCellTableViewCell.xib */; };
+		41CE427420BABCBBBF24B398 /* Pods_CallBibleFinally.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A0885817F95B437D680DED /* Pods_CallBibleFinally.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043A0F091FEC5BD50092AB2F /* travelInforTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = travelInforTableViewCell.swift; sourceTree = "<group>"; };
+		043A0F0A1FEC5BD50092AB2F /* travelInforTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = travelInforTableViewCell.xib; sourceTree = "<group>"; };
+		043A0F0F1FED5A840092AB2F /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		043A0F111FED5C190092AB2F /* BibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleViewController.swift; sourceTree = "<group>"; };
 		0477DB2B1FE9A43B003BFD7E /* CallBibleFinally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallBibleFinally.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0477DB2E1FE9A43B003BFD7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0477DB301FE9A43B003BFD7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,8 +44,12 @@
 		0477DB461FEAE360003BFD7E /* ScheduleCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCellTableViewCell.swift; sourceTree = "<group>"; };
 		0477DB471FEAE360003BFD7E /* ScheduleCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleCellTableViewCell.xib; sourceTree = "<group>"; };
 		0477DB4A1FEAE4F7003BFD7E /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		04950DD41FED99320054A46A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		04E5B1F21FEB092D00DF25D8 /* SceneCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCellTableViewCell.swift; sourceTree = "<group>"; };
 		04E5B1F31FEB092D00DF25D8 /* SceneCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SceneCellTableViewCell.xib; sourceTree = "<group>"; };
+		249DBE77A78CA539CAA838F4 /* Pods-CallBibleFinally.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallBibleFinally.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CallBibleFinally/Pods-CallBibleFinally.debug.xcconfig"; sourceTree = "<group>"; };
+		43A0885817F95B437D680DED /* Pods_CallBibleFinally.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CallBibleFinally.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		920AAD7DEA28C8CDC198EC98 /* Pods-CallBibleFinally.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallBibleFinally.release.xcconfig"; path = "Pods/Target Support Files/Pods-CallBibleFinally/Pods-CallBibleFinally.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41CE427420BABCBBBF24B398 /* Pods_CallBibleFinally.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +70,8 @@
 				0477DB2D1FE9A43B003BFD7E /* CallBibleFinally */,
 				0477DB2C1FE9A43B003BFD7E /* Products */,
 				0477DB401FE9A6C9003BFD7E /* Other */,
+				EEAB4FA4E275EC69DB49E016 /* Pods */,
+				AD836C171BE34D6234F3A8E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +88,8 @@
 			children = (
 				0477DB301FE9A43B003BFD7E /* ViewController.swift */,
 				0477DB321FE9A43B003BFD7E /* Main.storyboard */,
+				043A0F111FED5C190092AB2F /* BibleViewController.swift */,
+				043A0F0F1FED5A840092AB2F /* ChatViewController.swift */,
 				0477DB431FE9B2E6003BFD7E /* ExpandableNames.swift */,
 				0477DB411FE9AB01003BFD7E /* StackCell.swift */,
 				0477DB451FEAE314003BFD7E /* Schedule Table */,
@@ -85,6 +104,7 @@
 				0477DB371FE9A43B003BFD7E /* LaunchScreen.storyboard */,
 				0477DB351FE9A43B003BFD7E /* Assets.xcassets */,
 				0477DB2E1FE9A43B003BFD7E /* AppDelegate.swift */,
+				04950DD41FED99320054A46A /* Constants.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -97,8 +117,27 @@
 				0477DB471FEAE360003BFD7E /* ScheduleCellTableViewCell.xib */,
 				04E5B1F21FEB092D00DF25D8 /* SceneCellTableViewCell.swift */,
 				04E5B1F31FEB092D00DF25D8 /* SceneCellTableViewCell.xib */,
+				043A0F091FEC5BD50092AB2F /* travelInforTableViewCell.swift */,
+				043A0F0A1FEC5BD50092AB2F /* travelInforTableViewCell.xib */,
 			);
 			path = "Schedule Table";
+			sourceTree = "<group>";
+		};
+		AD836C171BE34D6234F3A8E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43A0885817F95B437D680DED /* Pods_CallBibleFinally.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEAB4FA4E275EC69DB49E016 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				249DBE77A78CA539CAA838F4 /* Pods-CallBibleFinally.debug.xcconfig */,
+				920AAD7DEA28C8CDC198EC98 /* Pods-CallBibleFinally.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,9 +147,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0477DB3D1FE9A43B003BFD7E /* Build configuration list for PBXNativeTarget "CallBibleFinally" */;
 			buildPhases = (
+				3919A2448B8CE73EADEB7B15 /* [CP] Check Pods Manifest.lock */,
 				0477DB271FE9A43B003BFD7E /* Sources */,
 				0477DB281FE9A43B003BFD7E /* Frameworks */,
 				0477DB291FE9A43B003BFD7E /* Resources */,
+				88C549C4569F5D3DE8B49A6D /* [CP] Embed Pods Frameworks */,
+				5F7F9CAFC6042903FD6E6C2A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,6 +204,7 @@
 			files = (
 				0477DB391FE9A43B003BFD7E /* LaunchScreen.storyboard in Resources */,
 				0477DB361FE9A43B003BFD7E /* Assets.xcassets in Resources */,
+				043A0F0C1FEC5BD50092AB2F /* travelInforTableViewCell.xib in Resources */,
 				0477DB491FEAE360003BFD7E /* ScheduleCellTableViewCell.xib in Resources */,
 				04E5B1F51FEB092D00DF25D8 /* SceneCellTableViewCell.xib in Resources */,
 				0477DB341FE9A43B003BFD7E /* Main.storyboard in Resources */,
@@ -170,18 +213,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3919A2448B8CE73EADEB7B15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CallBibleFinally-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F7F9CAFC6042903FD6E6C2A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CallBibleFinally/Pods-CallBibleFinally-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88C549C4569F5D3DE8B49A6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CallBibleFinally/Pods-CallBibleFinally-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ISTimeline/ISTimeline.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TimelineTableViewCell/TimelineTableViewCell.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISTimeline.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TimelineTableViewCell.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CallBibleFinally/Pods-CallBibleFinally-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0477DB271FE9A43B003BFD7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043A0F0B1FEC5BD50092AB2F /* travelInforTableViewCell.swift in Sources */,
+				04950DD51FED99320054A46A /* Constants.swift in Sources */,
 				0477DB441FE9B2E6003BFD7E /* ExpandableNames.swift in Sources */,
 				0477DB421FE9AB01003BFD7E /* StackCell.swift in Sources */,
 				0477DB481FEAE360003BFD7E /* ScheduleCellTableViewCell.swift in Sources */,
 				0477DB4B1FEAE4F7003BFD7E /* ScheduleViewController.swift in Sources */,
 				0477DB311FE9A43B003BFD7E /* ViewController.swift in Sources */,
 				0477DB2F1FE9A43B003BFD7E /* AppDelegate.swift in Sources */,
+				043A0F101FED5A840092AB2F /* ChatViewController.swift in Sources */,
 				04E5B1F41FEB092D00DF25D8 /* SceneCellTableViewCell.swift in Sources */,
+				043A0F121FED5C190092AB2F /* BibleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +423,7 @@
 		};
 		0477DB3E1FE9A43B003BFD7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 249DBE77A78CA539CAA838F4 /* Pods-CallBibleFinally.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -331,6 +439,7 @@
 		};
 		0477DB3F1FE9A43B003BFD7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 920AAD7DEA28C8CDC198EC98 /* Pods-CallBibleFinally.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

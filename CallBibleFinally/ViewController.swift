@@ -11,30 +11,33 @@ import UIKit
 class ViewController: UIViewController {
 
 //TODO - have all contact cells collapsed when app starts
+
+    @IBOutlet weak var tableView: UITableView!
+    
+
     
     var cellTracker = Set<IndexPath>()
+    var sectionNames = ["Office", "Field", "Other"]
 
+    var peopleNames = ["Morgan J. Freeman","", "", "", "" ,"", "", "", "", ""]
+    var peoplepositions = ["", ""]
+    var peopleCallTime = ["", ""]
     
     var twoDimensionalArray = [
         ExpandableNames(isExpanded: true, names: ["Brian", "Lisa", "Zack"]),
         ExpandableNames(isExpanded: true, names: ["Tara", "Alex", "Frank", "Katie", "Scott"]),
         ExpandableNames(isExpanded: true, names: ["Benjamin", "Sarah"])
     ]
-    var sectionNames = ["Office", "Field", "Other"]
-    
-    
-    @IBOutlet weak var tableView: UITableView!
-    @IBAction func EmailButtonClicked(_ sender: Any) {
-        print("Email button clicked")
-    }
-    
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
             tableView.estimatedRowHeight = 80
             tableView.rowHeight = UITableViewAutomaticDimension
+            tableView.tableFooterView = UIView(frame: CGRect.zero)
         
+        //TODO - This is a temp fix
+        cellTracker = [[0, 0], [0, 1], [0,2], [1, 0], [1, 1], [1,2],[1,3],[1,4],[2,0],[2,1]]
         
         }
     
@@ -42,6 +45,7 @@ class ViewController: UIViewController {
  
     }
     
+
 
 }
 
@@ -62,11 +66,11 @@ extension ViewController: UITableViewDataSource {
     
     //MARK: - Section Header Numbers and Look
     func numberOfSections(in tableView: UITableView) -> Int {
-        return twoDimensionalArray.count
+        return sectionNames.count
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 30
+        return 50
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -87,8 +91,7 @@ extension ViewController: UITableViewDataSource {
     
     //MARK: - Expanding and Closing Sections
     @objc func handleExpandClose(button: UIButton) {
-        print("trying to expand and close section")
-        print(button.tag)
+
         let section = button.tag
         //we'll try to close the section first by deleting the rows
         var indexPaths = [IndexPath]()
@@ -121,11 +124,13 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! StackCell
         
+        
         cell.toggle(cellTracker.contains(indexPath))
         
 //        let name = twoDimensionalArray[indexPath.section].names[indexPath.row]
 //        cell.textLabel?.text = "\(name) Section:\(indexPath.section) Row:\(indexPath.row)"
         
+        print(cellTracker)
         
         return cell
     }
@@ -157,6 +162,8 @@ extension ViewController: UITableViewDelegate {
             tableView.beginUpdates()
             tableView.endUpdates()
         }
+        
+    
 }
 
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jD0-vo-s1x">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eOl-Bi-lcc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="meo-Vk-Ukg">
+            <objects>
+                <tabBarController id="eOl-Bi-lcc" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F5N-G4-vgy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="mId-tE-yhH"/>
+                        <segue destination="jD0-vo-s1x" kind="relationship" relationship="viewControllers" id="LZG-RF-D4b"/>
+                        <segue destination="LWI-Pc-mfr" kind="relationship" relationship="viewControllers" id="Hn9-GB-vLU"/>
+                        <segue destination="4vS-Gq-lsh" kind="relationship" relationship="viewControllers" id="EiM-YH-RDQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wyr-s1-IR1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2564" y="-287"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -18,8 +38,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zyo-au-3VG">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="536"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zyo-au-3VG">
+                                <rect key="frame" x="0.0" y="78" width="375" height="540"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="150" id="82I-s9-a4R" customClass="StackCell" customModule="CallBibleFinally" customModuleProvider="target">
@@ -38,13 +58,13 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdR-TU-prt">
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdR-TU-prt">
                                                             <rect key="frame" x="327.5" y="6" width="27.5" height="19.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhu-Gw-tNg">
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhu-Gw-tNg">
                                                             <rect key="frame" x="141" y="6" width="58" height="19.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <nil key="textColor"/>
@@ -125,28 +145,43 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="F4i-Lw-nHo"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwB-Yh-mwf">
+                                <rect key="frame" x="239" y="20" width="120" height="30"/>
+                                <state key="normal" title="Multiple Message"/>
+                                <connections>
+                                    <action selector="multiMessageClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f3q-Jl-oB9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mnp-D9-RSR">
+                                <rect key="frame" x="92" y="20" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Multiple Email"/>
+                                <connections>
+                                    <action selector="multiEmailClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Te7-Uf-SzS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Zyo-au-3VG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5y5-qv-HrC"/>
-                            <constraint firstItem="Zyo-au-3VG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="M3t-66-MfP"/>
-                            <constraint firstItem="Zyo-au-3VG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VHA-qW-5yd"/>
-                            <constraint firstItem="Zyo-au-3VG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aJp-LS-HO5"/>
-                            <constraint firstItem="Zyo-au-3VG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gDP-dQ-GXm"/>
-                            <constraint firstItem="Zyo-au-3VG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nRX-Ie-8BD"/>
-                            <constraint firstAttribute="trailing" secondItem="Zyo-au-3VG" secondAttribute="trailing" id="y6T-u1-f2l"/>
+                            <constraint firstItem="SwB-Yh-mwf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Fp2-0F-ry2"/>
+                            <constraint firstItem="Zyo-au-3VG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Jgr-JN-4uu"/>
+                            <constraint firstItem="Zyo-au-3VG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="g2P-fo-Uas"/>
+                            <constraint firstItem="Zyo-au-3VG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kPh-Zn-cze"/>
+                            <constraint firstItem="Zyo-au-3VG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qVK-y5-lHf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SwB-Yh-mwf" secondAttribute="trailing" constant="16" id="qcm-1X-SBk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="jUZ-pU-ORr"/>
                     <connections>
                         <outlet property="tableView" destination="Zyo-au-3VG" id="7V7-f7-KMX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="3442" y="-287"/>
         </scene>
-        <!--Schedule View Controller-->
+        <!--Schedule-->
         <scene sceneID="Xb5-xV-y5C">
             <objects>
                 <viewController id="jD0-vo-s1x" customClass="ScheduleViewController" customModule="CallBibleFinally" customModuleProvider="target" sceneMemberID="viewController">
@@ -154,8 +189,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zF2-NZ-ICT">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zF2-NZ-ICT">
+                                <rect key="frame" x="0.0" y="54" width="375" height="613"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="8Is-Lo-F1H" customClass="ScheduleCellTableViewCell" customModule="CallBibleFinally" customModuleProvider="target">
@@ -186,13 +221,46 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bhT-fX-ewh"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Schedule" id="iaW-LH-tlP"/>
                     <connections>
                         <outlet property="scheduleTableView" destination="zF2-NZ-ICT" id="Mqs-hM-byd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IiA-3h-tZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="896.79999999999995" y="133.5832083958021"/>
+            <point key="canvasLocation" x="4374" y="-287"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="EZ8-vU-wk6">
+            <objects>
+                <viewController id="LWI-Pc-mfr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mNw-dA-Ogv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="TpG-dI-T4a"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chat" id="6re-nE-rcs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZoJ-Xd-EO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5182" y="-287"/>
+        </scene>
+        <!--Bible-->
+        <scene sceneID="Qnx-8F-jqa">
+            <objects>
+                <viewController id="4vS-Gq-lsh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8pr-y1-XZ7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="IQi-ge-IYb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bible" id="sZM-7J-0YT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2HO-3N-pfp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6004" y="-287"/>
         </scene>
     </scenes>
     <resources>

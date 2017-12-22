@@ -12,6 +12,16 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBOutlet weak var scheduleTableView: UITableView!
     
+    @IBAction func addEventClicked(_ sender: Any) {
+        insertNewEvent()
+    }
+    
+    @IBAction func addTravelClicked(_ sender: Any) {
+    }
+    @IBAction func addSceneClicked(_ sender: Any) {
+    }
+    
+    
     let timeData = ["7:00 am", "10:00 am", "1:00 pm", "3:00 pm", "6:00 pm"]
     let locationData = ["Teen Mom Office", "Hotel Marriott", "TGIF Edmun Plaza", "Kayla's House", "Hotel Marriott"]
     
@@ -29,6 +39,16 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    
+    func insertNewEvent() {
+        
+    }
+    
+    
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    //MARK: - TableView DataSource Methods
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return timeData.count
     }
@@ -43,10 +63,10 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
         return 70
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////
     
+    //MARK: - TableView Delegate Methods
     
+
 }
