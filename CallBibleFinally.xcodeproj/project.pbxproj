@@ -69,7 +69,6 @@
 			children = (
 				0477DB2D1FE9A43B003BFD7E /* CallBibleFinally */,
 				0477DB2C1FE9A43B003BFD7E /* Products */,
-				0477DB401FE9A6C9003BFD7E /* Other */,
 				EEAB4FA4E275EC69DB49E016 /* Pods */,
 				AD836C171BE34D6234F3A8E8 /* Frameworks */,
 			);
@@ -93,6 +92,7 @@
 				0477DB431FE9B2E6003BFD7E /* ExpandableNames.swift */,
 				0477DB411FE9AB01003BFD7E /* StackCell.swift */,
 				0477DB451FEAE314003BFD7E /* Schedule Table */,
+				0477DB401FE9A6C9003BFD7E /* Other */,
 				0477DB3A1FE9A43B003BFD7E /* Info.plist */,
 			);
 			path = CallBibleFinally;
