@@ -11,6 +11,7 @@
 		043A0F0C1FEC5BD50092AB2F /* travelInforTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043A0F0A1FEC5BD50092AB2F /* travelInforTableViewCell.xib */; };
 		043A0F101FED5A840092AB2F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A0F0F1FED5A840092AB2F /* ChatViewController.swift */; };
 		043A0F121FED5C190092AB2F /* BibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A0F111FED5C190092AB2F /* BibleViewController.swift */; };
+		04648F1B1FEDA21D00E5B881 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04648F1A1FEDA21D00E5B881 /* Constants.swift */; };
 		0477DB2F1FE9A43B003BFD7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477DB2E1FE9A43B003BFD7E /* AppDelegate.swift */; };
 		0477DB311FE9A43B003BFD7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477DB301FE9A43B003BFD7E /* ViewController.swift */; };
 		0477DB341FE9A43B003BFD7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0477DB321FE9A43B003BFD7E /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		043A0F0A1FEC5BD50092AB2F /* travelInforTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = travelInforTableViewCell.xib; sourceTree = "<group>"; };
 		043A0F0F1FED5A840092AB2F /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		043A0F111FED5C190092AB2F /* BibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleViewController.swift; sourceTree = "<group>"; };
+		04648F1A1FEDA21D00E5B881 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0477DB2B1FE9A43B003BFD7E /* CallBibleFinally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallBibleFinally.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0477DB2E1FE9A43B003BFD7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0477DB301FE9A43B003BFD7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				0477DB371FE9A43B003BFD7E /* LaunchScreen.storyboard */,
 				0477DB351FE9A43B003BFD7E /* Assets.xcassets */,
 				0477DB2E1FE9A43B003BFD7E /* AppDelegate.swift */,
+				04648F1A1FEDA21D00E5B881 /* Constants.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				043A0F0B1FEC5BD50092AB2F /* travelInforTableViewCell.swift in Sources */,
+				04648F1B1FEDA21D00E5B881 /* Constants.swift in Sources */,
 				0477DB441FE9B2E6003BFD7E /* ExpandableNames.swift in Sources */,
 				0477DB421FE9AB01003BFD7E /* StackCell.swift in Sources */,
 				0477DB481FEAE360003BFD7E /* ScheduleCellTableViewCell.swift in Sources */,
