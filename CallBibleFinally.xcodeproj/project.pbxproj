@@ -21,7 +21,6 @@
 		0477DB481FEAE360003BFD7E /* ScheduleCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477DB461FEAE360003BFD7E /* ScheduleCellTableViewCell.swift */; };
 		0477DB491FEAE360003BFD7E /* ScheduleCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0477DB471FEAE360003BFD7E /* ScheduleCellTableViewCell.xib */; };
 		0477DB4B1FEAE4F7003BFD7E /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477DB4A1FEAE4F7003BFD7E /* ScheduleViewController.swift */; };
-		04950DD51FED99320054A46A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04950DD41FED99320054A46A /* Constants.swift */; };
 		04E5B1F41FEB092D00DF25D8 /* SceneCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E5B1F21FEB092D00DF25D8 /* SceneCellTableViewCell.swift */; };
 		04E5B1F51FEB092D00DF25D8 /* SceneCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E5B1F31FEB092D00DF25D8 /* SceneCellTableViewCell.xib */; };
 		41CE427420BABCBBBF24B398 /* Pods_CallBibleFinally.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A0885817F95B437D680DED /* Pods_CallBibleFinally.framework */; };
@@ -44,7 +43,6 @@
 		0477DB461FEAE360003BFD7E /* ScheduleCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCellTableViewCell.swift; sourceTree = "<group>"; };
 		0477DB471FEAE360003BFD7E /* ScheduleCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleCellTableViewCell.xib; sourceTree = "<group>"; };
 		0477DB4A1FEAE4F7003BFD7E /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
-		04950DD41FED99320054A46A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		04E5B1F21FEB092D00DF25D8 /* SceneCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCellTableViewCell.swift; sourceTree = "<group>"; };
 		04E5B1F31FEB092D00DF25D8 /* SceneCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SceneCellTableViewCell.xib; sourceTree = "<group>"; };
 		249DBE77A78CA539CAA838F4 /* Pods-CallBibleFinally.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallBibleFinally.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CallBibleFinally/Pods-CallBibleFinally.debug.xcconfig"; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 				0477DB371FE9A43B003BFD7E /* LaunchScreen.storyboard */,
 				0477DB351FE9A43B003BFD7E /* Assets.xcassets */,
 				0477DB2E1FE9A43B003BFD7E /* AppDelegate.swift */,
-				04950DD41FED99320054A46A /* Constants.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -279,7 +276,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				043A0F0B1FEC5BD50092AB2F /* travelInforTableViewCell.swift in Sources */,
-				04950DD51FED99320054A46A /* Constants.swift in Sources */,
 				0477DB441FE9B2E6003BFD7E /* ExpandableNames.swift in Sources */,
 				0477DB421FE9AB01003BFD7E /* StackCell.swift in Sources */,
 				0477DB481FEAE360003BFD7E /* ScheduleCellTableViewCell.swift in Sources */,
